@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo HTML5, CSS3 e JavaScript</title>
+    <link rel="stylesheet" href="css/meucss.css">
+    <link rel="shortcut icon" href="img/school.ico" type="image/x-icon">
+</head>
+<body>
+    <h2>0- Introdução</h2>
+        <p>Sempr utilize letras minusculas para o nome de seus arquivos.</p>
+        <p>html: Conteudo da nossa pagina. <br>
+            css: Estilo da nossa pagina. <br>
+            javascript: Interatividade da nossa pagina.
+        </p>
+        <p>Front-ende: Experiencia do usuario (Trabalhar com o usuario diretamente). <br>
+            Back ende: Seu codigo com o servidor (Trabalhar com/para o servidor ).
+        </p>
+        <p>Para comenmtar no html utiliza ' &lt;!--' (Para abrir) e ' --!&gt;' (Para fechar)</p>
+        <p>span:Para selecionar uma parte de um texto</p>
+    <hr>
+    <h2>1- Titulo</h2>
+        <p>No visual studio utilize '!' e clique enter para criar o codigo html basico.</p>
+        <p>O titulo pode ter 6 variações de tamanhor indo do &lt;h1&gt; ao &lt;h6&gt;.</p>
+        <p>Utilize &lt;hr&gt; para criar uma linha horisontal.</p>
+    <hr>
+    <h2>2- Parágrafos e quebras de linha.</h2>
+        <p>Você pode escrever um parágrafo de qualquer jeito. Basta colocar tudo no meio do par de tags &lt;p&gt; e &lt;/p&gt;.</p>
+        <p>Se precisar quebra o texto em algum lugar expecifico <br> como esse, você pode usar a tag &lt;br&gt;.</p>
+    <hr>
+    <h2>3- Sibolos e emojis </h2>
+        <p>Para Simbolos especias  utilizamos '&' mais o nome do simbolo. Ao lado tem o link para um site que vai ajudar: <button><a href="https://www.homehost.com.br/blog/tutoriais/caracteres-especiais-acentos-html/" target="_blank">Site</a></button> </p>
+        <p>Para Emojis utilizamos '&#x' mais o codigo do emoji. Para saber os codigos, ao lado tem um link para um site que vai ajudar: <button><a href="https://emojipedia.org/christmas-tree#technical"target="_blank">Site</a></button> </p>
+        <p>Simbolos espaciais: <button><a href="https://www.invertexto.com/simbolos-para-copiar">invertexto</a></button></p>
+    <hr>
+    <h2>4- Imagem</h2>
+        <p>Sites com imagens, que você pode utilizar sem direitos autorais: 
+            <ul>
+                <li><a href="https://unsplash.com/pt-br"target="_blank">unsplash</a></li>
+                <li><a href="https://www.pexels.com/pt-br/"target="_blank">pexels</a></li>
+            </ul>
+        </p>
+        <p>O GIMP é um bom editor de fotos gratuito.</p>
+        <P>A area de ferramentas do google é tambem muito importante quando você quer achar alguma imagem.</P>
+        <p>png: Subistituição do gif e permite a transparencia. <br> jpeg: Compacta a imagem e naturalmente são imagens grandes.</p>
+        <p>Modificar o tamanho da imagem é bom para diminuir o "peso" dela no seu site. Tamanhos bons seriam de 1200(para imagens muito grandes) e 650(para conteudos) </p>
+        <p>No site <a href="https://iconscout.com/icons/html"target="_blank">iconscout</a> tem varias imagens de icones que podem ser utilizadas</p>
+    <hr>
+    <h2>5- Icones e Favicon</h2>
+        <p>Site onde você pode achar icones: <a href="https://www.iconarchive.com/"target="_blank">iconarchive</a> <br> Site para criar icones: <a href="https://www.favicon.cc/"target="_blank">favicon.cc</a> <br> Site para tranformar outros formatos em icones: <a href="https://favicon.io/"target="_blank">favicon.io</a>.</p>
+        <p>Para colocar um favicon é so escrever "link" e procurar a opção "favicon", e no "href" é so colocar seu arquivo.</p>
+    <hr>
+    <h2>6- Sobre o HTML5</h2>
+        <p>O HTML5 utiliza da Semantica</p>
+        <p>Você vai utilizar bastante o <a href="https://www.lipsum.com/"target="_blank">Lorem ipsum</a> para fazer o modelo das paginas</p>
+        <p>Tags para 'marcar' frases: 
+            <ul> <li>&lt;strong&gt; (<strong>Negrito</strong>)</li>
+                 <li>&lt;em&gt;(<em>Italico</em>)</li>
+                 <li>&lt;address&gt; (Endereço)</li>
+                 <li>&lt;mark&gt;(<mark>Marcar texto</mark>)</li>
+                 <li>&lt;del&gt;(<del>Texto excluido</del>)</li> 
+                <li> &lt;ins&gt;(<ins>Texto Inserido</ins>)</li>
+            </ul> 
+        </p>    
+        <p>Tags do HTML:
+            <ul> <li>&lt;sup&gt;(x<sup>20</sup>+3)</li> 
+                <li>&lt;sub&gt;(H<sub>2</sub>O)</li> 
+                <li> &lt;code&gt; (<code>Deixa as letras com o mesmo espaçamento</code>)</li> 
+                 <li>
+                    &lt;pre&gt;(considera tudo, ex:
+                            <pre>
+    num= int(input("Digite o numero: "))
+        if num% 2==0:
+            print("O numero {num} é PAR")
+        else:
+            print("O numero {num} é ÍMPAR")
+        print("Fim do programa"))
+                            </pre></li>
+                 <li>&lt;q&gt;(Para citações simples ou como diria fulano: <q>as aspas</q>)</li> 
+                 <li>&lt;blockquote&gt;(Para citações completas (obs: usa-se o &lt;cite&gt; apenas para indicar o autor, mas não aparece na sua pagina) : segundo fulano, no seu livro tal:
+                            <blockquote cite="https://www.google.com.br/books/edition/Construindo_web_sites_Para_Leigos/exIF0AEACAAJ?hl=pt-BR">
+                        De volta devido ao sucesso e totalmente atualizado, aqui está o jeito divertido, fácil e direto de se construir um bom Web Site, mesmo que você nunca tenha feito isso antes! Aprenda a linguagem Web, se torne mestre nas tags HTML e editores WYSIWYG, faça com que suas páginas fiquem legais com gráficos, adicione um blog e atraia o público.
+                            )</blockquote></li>
+                 <li>&lt;abbr&gt;(Para siglas: <abbr title="HyperText Markup Language">HTML</abbr>)</li> 
+                <li>&lt;bdo dir="rtl"&gt;(Texto invertido- <bdo dir="rtl">Texto invertido</bdo>)</li>
+                <li>Tags de agrupamento:
+                    <ul>
+                        <li>header:cabeçario</li>
+                        <li>main:conteudo principal</li>
+                        <li>foter:rodape</li>
+                        <li>nav:menu de navegação</li>
+                        <li>section:seção</li>
+                        <li>article:artigo</li>
+                        <li>aride:nome do autor</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    <hr>
+    <h2>7- Listas</h2>
+        <p>Listas ordenadas são usadas a tags &lt;ol&gt; para inciar e &lt;li&gt; para adicionar os itens</p>
+        <p>Utilizamos o &lt;start&gt; para escolher a ordem que começa a lista</p>
+        <p>Tipos de estilo:
+            <ul>
+                <li>A</li>
+                <li>I</li>
+                <li>i</li>
+            </ul>
+        </p>
+        <p>Lista desordenada são usadas a tag &lt;ul&gt; para inciar e &lt;li&gt; para adicionar os itens</p>
+        <p>Tipos de estilo: <abbr title="Circulos sem fundo">circle</abbr> <br>
+                            <abbr title="Quadrados">square</abbr> <br>
+        </p>
+        <p>Pode misturar listas</p>
+        <p>Listas de dicionario são usadas as tag &lt;dl&gt; para inicia, &lt;dt&gt; para o termo e &lt;dd&gt; para a discrição</p>
+    <hr>
+    <h2>8- Links</h2>
+        <p>A tag &lt;a&gt; serve para linkar um site/pagina  </p>
+        <p>Utuliza-se 'target="_blank"' no &lt;a&gt; para que o link abra em uma nova janela e 'target="_self' para abrir na mesma janela</p>
+        <p>O 'rel=""' serve para indicar como vai ser o estilo de navegação da suas paginas: <br>
+            <abbr title="paginas extenas">external</abbr> <br>
+            <abbr title="a proxima pagina está no link">next</abbr> <br>
+            <abbr title="a pagina anterior está no link">prev</abbr> <br>
+        <abbr title="para dizer para o mecanismo de busca para não relacionar a sua pagina(para propagandas)">nofollow</abbr>
+        </p>
+        <p>Para sair de uma pasta para linkar usa-se '../'</p>
+        <p>Para dowload de arquivos se utiliza 'download="nome do arquivo" type="tipo do arquivo"'</p>
+        <p>No site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml"target="_blank">iana.org</a>, tem os tipos de arquivos e o que usar no 'type=""'</p>
+    <hr>
+    <h2>9- Imagens dinamicas</h2>
+        <p>use o &lt;picture&gt; para inicia, use o 'img' normal, para adicionar a imagem inicial maior ou menor, depois use o 'soucer:media:type' para adicionar a imagem maior se você começar pela menor e vice versa</p>
+    <hr>
+    <h2>10- Audio</h2>
+        <p>use &lt;audio&gt; para iniciar, use 'soucer:src' para adicionar o nome do audio e o tipo.</p>
+        <p>Dentro do &lt;audio&gt;, usa-se 'preload=""':
+            <ul>
+                <li><abbr title="só carrega o site se o audio carregar">auto</abbr></li>  
+                <li><abbr title="carrega algumas informações">metadata</abbr></li>  
+                <li><abbr title="não carrega nada até que o usuario dê o play">none</abbr></li>
+            </ul></p>
+            <p>Também se utiliza 'autoplay controls' logo apos o 'preload=""', se utiliza o 'loop' para criar um loop no audio</p>
+        <p>tipos de audios:<ul>
+                <li><abbr title="mpeg">.mp3</abbr></li> 
+                <li><abbr title="ogg">.ogg</abbr></li> 
+                <li><abbr title="wav">.wav</abbr></li>
+        </ul>
+        </p>
+        <p>Para encontrar audios que podem ser usados, use a <a href="https://studio.youtube.com/channel/UCaNv7ak4-dS9M2SjmwuUX3Q/music" target="_blank">biblioteca de audio do youtube</a> </p>
+    <hr>
+    <h2>11- Video</h2>
+        <h3>Forma mais pesada</h3>
+            <p>use &lt;video&gt; para iniciar, use 'soucer:src' para adicionar o nome do video e o tipo.</p>
+            <p>tipos de videos:<ul>
+                <li>mp4</li>
+                <li>m4v</li> 
+                <li>webm</li> 
+                <li>ogv</li>
+            </ul></p>
+            <p>Usa-se o 'poster=""', para colocar a capa do video; usa-se o 'controls' para o play</p>
+            <p>Para converter o video você pode usar o <a href="https://handbrake.fr/rotation.php?file=HandBrake-1.3.1-x86_64-Win_GUI.exe&old=true" target="_blank">HandBrake</a> e o <a href="https://video.online-convert.com/pt/converter-para-ogv"  target="_blank">conversor ogv</a></p>
+        <h3>Forma mais leve</h3>
+            <p>utilize o <a href="https://www.youtube.com/"  target="_blank">youtube</a> ou o <a href="https://vimeo.com/pt-br/" target="_blank">vimeo</a> para colocar videos (!cuidado com os direitos autorais!)</p>
+    <hr>
+    <h2>12- Cores</h2>
+            <p>Paletas tem de 3 a 5 cores</p>
+            <h3>Cores primarias</h3>
+            <p>vermelho, amarelo e azul</p>
+            <h3>Cores secundarias</h3>
+            <p> laranja, verde e roxo</p>
+            <h3>cores tercearias</h3>
+            <p>vermelho-arroxeado, azul-esverdeado, azul-arroxeado, vermelho-alaranjado, amarelo-alaranjado e amarelo-esverdeado</p>
+            <h3>Cores complementares</h3>
+            <p>Cores contrarias(Contraste)</p>
+            <h3>Cores análogas</h3>
+            <p>Cores ao lado(Harmonia cimetrica)</p>
+            <h3>Cores análogas e complementares</h3>
+            <p>Cores ao lado e uma cor oposta da principal</p>
+            <h3>Cores análogas relacionadas</h3>
+            <p>2 cores uma ao lado da outra, pula uma cor do lada e escolhe a proxima</p>
+            <h3>Cores intercaladas</h3>
+            <p>pula a cor do lado e escolhe a proxima até ter 3 cores</p>
+            <h3>Cores triadicas</h3>
+            <p>Cores que formam um triangulo equilatero</p>
+            <h3>Cores quadrado</h3>
+            <p>pula 2 cores ao lado e escolhe a proxima até ter 4 cores</p>
+            <h3>Cores tetrádicas</h3>
+            <p>Escolhe duas cores e os seus opostos</p>
+            <h3>Monocromia</h3>
+            <p>Escolhe uma cor e modifica a saturação e o brilho(degrade)</p>
+            <br>
+            <p>Sites que podem ajudar: <ul><li><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank">color.adobe.com</a></li><li><a href="https://paletton.com/#uid=33A0J0krmoMhPvFmBs3u1kgB9fc" target="_blank">paletton.com</a></li><li><a href="https://coolors.co/391463-f7dd72-499f68-016fb9-ff101f" target="_blank">coolors.co</a></li></ul></p>
+            <h3>Degrade</h3>
+            <p>utiliza-se no &lt;style&gt;, 'background-image: <abbr title="linear">linear-gradient</abbr> ou <abbr title="circular">radia-gradient</abbr>(localização(ex:center,90deg), cores)' para colocar degrade no fundo, se você colocar uma porsentagem com a cor você pode modificar o tanto que aquela cor aparece </p>
+            <p>Coloca-se no '*','background-attachment: fixed;' para fixar o fundo</p>
+    <hr>
+    <h2>13- Fonts</h2>
+            <p>Tipos de fontes
+                <ul>
+                    <li>serifadas(Com serifa)</li>
+                    <li>sans-serif(Sem serifa)</li>
+                    <li>monoespaçadas(Mesmo espaçamento)</li>
+                    <li>display(Comemorativas)</li>
+                </ul>
+            </p>
+            <p>Tipos de modificações 
+                <ul>
+                    <li>font-weight:Peso</li>
+                    <li>font-family:Familia</li>
+                    <li>font-size:Tamanho</li>
+                    <li>font-style:Estilo</li>
+                    <li>text-decoration:"Decoração"</li>
+                    <li>text-aling:Alinhamento</li>
+                    <li>text-indent:Começo antes do paragrafo</li>
+                </ul>
+            </p>
+            <p>Usa-se 'font:' para juntar os modelos em um só, para isso a ordem seria: font-style font-weight font-size font-family</p>
+            <p>Como colocar uma fonte baixada:
+                <pre>
+@font-face{
+    font-family:'nome';
+    src:url('nome do arquivo') format(), url('nome do arquivo') format();
+}
+                </pre>
+            </p>
+            <p>Tipos de 'format()':
+                <ul>
+                    <li>opentype(otf)</li>
+                    <li>truetype(ttf)</li>
+                    <li>embedded-opentype</li>
+                    <li>truetype-att(apple advances typography)</li>
+                    <li>svg</li>
+                </ul>
+            </p>
+            <p>Sites:
+                <ul>
+                   <li><a href="https://www.w3schools.com/cssref/css_websafe_fonts.php">w3schools</a></li> 
+                   <li><a href="https://fonts.google.com/">fonts.google</a></li>  
+                   <li><a href="https://www.dafont.com/pt/">dafont</a></li>  
+                   <li><a href="https://www.whatfontis.com/">whatfontis</a></li> 
+                   <li><a href="https://www.fontsquirrel.com/">fontsquirrel</a></li>  
+                   <li><a href="https://www.myfonts.com/">myfonts</a></li>
+               </ul></p>
+    <hr>
+    <h2>14- Css</h2>
+        <p>box-level:Quando uma caixa preenche uma linha toda do navegador (ex: div h1 p)</p>
+        <p>inline-level:Quando uma caixa não preenche uma linha toda do navegador (ex: a span sub)</p>
+        <p>height:Altura</p>
+        <p>width:Largura</p>
+        <p>display: <ul>
+            <li>inline-block;:Continua sendo um inline-level, mas com caracteristicas de box-level</li>
+            <li>none;:Some</li>
+            <li>block;:Deixa como box-level</li>
+            <li>inline:Deixa como inline-level</li>
+        </ul></p>
+        <p>border:borda <ul>
+            <li>border-width:largura</li>
+            <li>border-style:estilo (mais usados: <ul>
+                <li>solid</li>
+                <li>dashed</li>
+                <li>dotted</li>
+                <li>grouver</li>
+            </ul>)</li>
+            <li>border-color:cor</li>
+        </ul>(ordem)</p>
+        <p>padding:espaço interno (ordem: top right bottom left)
+            <p>todas as medidas iguais coloca um valor</p>
+            <p>medidas de cima e em baixo um valor e direita e esquerda outro coloca dois valores</p>
+        </p>
+        <p>margin:espaço externo (ordem: top right bottom left)
+            <p>todas as medidas iguais coloca um valor</p>
+            <p>medidas de cima e em baixo um valor e direita e esquerda outro coloca dois valores</p>
+            <p>utilizar o "auto" para centralizar</p>
+        </p>
+        <p>outline:espaço entre a 'border' e a 'margin'(Ordem width style color )</p>
+        <p>':' pseudo-classe(estado): <ul>
+            <li>houver:Quando passar algo por cima</li>
+            <li>visited:Ja visitado</li>
+            <li>active:Quando ativado</li>
+        </ul>
+        </p>
+        <p>contet:'';:Conteudo</p>
+        <p>'::' pseudo-elemento: <ul>
+            <li>after:depois</li>
+            <li>before:antes</li>
+        </ul></p>
+        <p>box-shadow:sombra (dica:usar o inspecionar do google)</p>
+        <p>border-radius:arredondamento
+            <p>todas as medidas iguais coloca um valor</p>
+            <p>medidas de cima e em baixo um valor e direita e esquerda outro coloca dois valores</p>
+        </p>
+        <p>Colocar sua borda:
+            Use o tamnho no ginp 80x80
+            <pre>
+border-image-source: url('nome do arquivo');(Adicionar sua borda)
+border-image-slice: numero;(Tamanho)
+border-image-repeat:repeat ou stretch;(Tipo)
+        </pre></p>
+        <p>Use 'transparent' para borda tranparente</p>
+        <p>Use ':rost' para colocar variaveis dentro e use '--' para adiciona-las</p>
+        <p>Use 'line-height:' para demarcar o espaçamento das linhas</p>
+        <p>Use 'list-style-type:' para modificar o simbolo da lista e use '\00a0' para dar um espaçamento</p>
+        <p>Use 'min-width e max-width' para deixar o conteudo responsivo</p>
+        <p>Use 'transition-duration: ;' para determinar a duração de um estilo para o outro</p>
+        <p>Use 'coluns' para determinar quantas colunas você quer em sua lista</p>
+            <p>Use 'list-style-position:' para determinar a posição da sua lista</p>
+            <p>Use 'position:' para determinar a posição de alguma caixa</p>
+    <hr>
+</body>
+</html>

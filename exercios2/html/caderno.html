@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caderno digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <h1>Anotações de consulta</h1>
+        <h2>HTML:</h2>
+            <p>Front-ende: Experiencia do usuario (Trabalhar com o usuario diretamente). <br>
+                Back ende: Seu codigo com o servidor (Trabalhar com/para o servidor ).
+            </p>
+            <p>Para imagens dinamicas use o &lt;picture&gt; para inicia, use o 'img' normal, para adicionar a imagem inicial maior ou menor, depois use o 'soucer:media:type' para adicionar a imagem maior se você começar pela menor e vice versa</p>
+            <p>Para audios use &lt;audio&gt; para iniciar, use 'soucer:src' para adicionar o nome do audio e o tipo.</p>
+                <p>Dentro do &lt;audio&gt;, usa-se 'preload=""':
+                    <ul style="list-style-type: square;">
+                        <p>
+                            <li><p>auto:Só carrega o site se o audio carregar</p></li>
+                        <p>
+                            <p></p></p>
+                        </p>
+                        <li><p>metadata:Carrega algumas informações</p></li>
+                        <li><p>none:Não carrega nada até que o usuario dê o play</p></li>
+                    </ul></p>
+        <h3>Tags:</h3>
+            <p>Para comenmtar no html utiliza ' &lt;!--' (Para abrir) e ' --!&gt;' (Para fechar)</p>
+            <p><ul>
+                <li><p>&lt;hr&gt;:Linha Horizontal</p></li>
+                <li><p>&lt;br&gt;:Quebra de Linha</p></li>
+                <li><p>&lt;strong&gt;:Negrito</p></li>
+                <li><p>&lt;em&gt;:Italico</p></li>
+                <li><p>&lt;address&gt;:Endereço</p></li>
+                <li><p>&lt;mark&gt;:Marcar texto</p></li>
+                <li><p>&lt;del&gt;:Texto excluido</p></li>
+                <li><p> &lt;ins&gt;:Texto Inserido</p></li>
+                <li><p>&lt;sup&gt;:x<sup>20</sup>+3</p></li>
+                <li><p>&lt;sub&gt;:H<sub>2</sub>O</p></li>
+                <li><p> &lt;code&gt;:Deixa as letras com o mesmo espaçamento</p></li>
+                <li><p>&lt;pre&gt;:Considera tudo</p></li>
+                <li><p>&lt;q&gt;:Para citações simples</p></li>
+                <li><p>&lt;blockquote&gt;:Para citações completas (obs: usa-se o &lt;cite&gt; apenas para indicar o autor, mas não aparece na sua pagina)</p></li>
+                <li><p>&lt;abbr&gt;:Para siglas</p></li>
+                <li><p>&lt;bdo dir="rtl"&gt;:Texto invertido</p></li>
+                <li><p>
+                    Variações de &lt;ol&gt; e &lt;ul&gt;:
+                        <ul style="list-style-type: square;">
+                            <li><p>&lt;ol&gt;: A, I, i</p></li>
+                            <li><p>&lt;start&gt;:Escolher a ordem que começa a lista</p></li>
+                            <li><p>&lt;ul&gt;:circle, square</p></li>
+                        </ul>
+                </p>
+                </li>
+                <li><p>span:Para selecionar uma parte de um texto</p></li>
+                <li><p>Tags de agrupamento:
+                    <ul>
+                        <li>header:cabeçario</li>
+                        <li>main:conteudo principal</li>
+                        <li>foter:rodape</li>
+                        <li>nav:menu de navegação</li>
+                        <li>section:seção</li>
+                        <li>article:artigo</li>
+                        <li>aride:nome do autor</li>
+                    </ul></p></li>
+            </ul></p>
+        <h2>CSS:</h2>
+            <p>Para sair de uma pasta para linkar usa-se '../'</p>
+            <p>Paletas tem de 3 a 5 cores</p>
+            <p>Para degrade utiliza-se no &lt;style&gt;, 'background-image: <abbr title="linear">linear-gradient</abbr> ou <abbr title="circular">radia-gradient</abbr>(localização(ex:center,90deg), cores)' para colocar degrade no fundo, se você colocar uma porsentagem com a cor você pode modificar o tanto que aquela cor aparece </p>
+            <img src="img/Captura de tela 2024-01-18 111019.png" alt="cores">
+            <p>Tipos de fontes
+                <ul>
+                    <li><p>serifadas(Com serifa)</p></li>
+                    <li><p>sans-serif(Sem serifa)</p></li>
+                    <li><p>monoespaçadas(Mesmo espaçamento)</p></li>
+                    <li><p>display(Comemorativas)</p></li>
+                </ul>
+            </p>
+            <p>Tipos de modificações 
+                <ul>
+                    <li><p>font-weight:Peso</p></li>
+                    <li><p>font-family:Familia</p></li>
+                    <li><p>font-size:Tamanho</p></li>
+                    <li><p>font-style:Estilo</p></li>
+                    <li><p>text-decoration:"Decoração"</p></li>
+                    <li><p>text-aling:Alinhamento</p></li>
+                    <li><p>text-indent:Começo antes do paragrafo</p></li>
+                </ul>
+            </p>
+            <p>Usa-se 'font:' para juntar os modelos em um só, para isso a ordem seria: font-style font-weight font-size font-family</p>
+            <p>Como colocar uma fonte baixada:
+                <pre style="color: #551A8B;">
+@font-face{
+    font-family:'nome';
+    src:url('nome do arquivo'), format(' '), url('nome do arquivo'), format(' ');
+}
+                </pre>
+            </p>
+            <p>Tipos de 'format()':
+                <ul>
+                    <li><p>opentype(otf)</p></li>
+                    <li><p>truetype(ttf)</p></li>
+                    <li><p>embedded-opentype</p></li>
+                    <li><p>truetype-att(apple advances typography)</p></li>
+                    <li><p>svg</p></li>
+                </ul>
+            </p>
+            <p>box-level:Quando uma caixa preenche uma linha toda do navegador (ex: div h1 p)</p>
+             <p>inline-level:Quando uma caixa não preenche uma linha toda do navegador (ex: a span sub)</p>
+            <p>height:Altura</p>
+            <p>width:Largura</p>
+            <p>display: <ul>
+                <li><p>inline-block;:Continua sendo um inline-level, mas com caracteristicas de box-level</p></li>
+                <li><p>none;:Some</p></li>
+                <li><p>block;:Deixa como box-level</p></li>
+                <li><p>inline:Deixa como inline-level</p></li>
+            </ul></p>
+            <p>border:borda/ outline:espaço entre a 'border' e a 'margin' (Ordem width style color )</p>
+            <p>padding:espaço interno/margin:espaço externo (ordem: top right bottom left)
+                <p>todas as medidas iguais coloca um valor</p>
+                <p>medidas de cima e em baixo um valor e direita e esquerda outro coloca dois valores</p>
+                <p>para margin utilizar o "auto" para centralizar</p>
+            </p>
+            <p>':' pseudo-classe(estado): <ul>
+                <li><p>houver:Quando passar algo por cima</p></li>
+                <li><p>visited:Ja visitado</p></li>
+                <li><p>active:Quando ativado</p></li>
+            </ul>
+            </p>
+            <p>contet:'';:Conteudo</p>
+            <p>'::' pseudo-elemento: <ul>
+                <li><p>after:depois</p></li>
+                <li><p>before:antes</p></li>
+            </ul></p>
+            <p>box-shadow:sombra (dica:usar o inspecionar do google)</p>
+            <p>border-radius:arredondamento
+                <p>todas as medidas iguais coloca um valor</p>
+                <p>medidas de cima e em baixo um valor e direita e esquerda outro coloca dois valores</p>
+            </p>
+            <p>Colocar sua borda:
+                Use o tamnho no ginp 80x80
+                <pre style="color: #551A8B;">
+border-image-source: url('nome do arquivo');(Adicionar sua borda)
+border-image-slice: numero;(Tamanho)
+border-image-repeat:repeat ou stretch;(Tipo)
+            </pre></p>
+            <p>Use 'transparent' para borda tranparente</p>
+            <p>Use ':rost' para colocar variaveis dentro e use '--' para adiciona-las</p>
+            <p>Use 'line-height:' para demarcar o espaçamento das linhas</p>
+            <p>Use 'list-style-type:' para modificar o simbolo da lista e use '\00a0' para dar um espaçamento</p>
+            <p>Use 'min-width e max-width' para deixar o conteudo responsivo</p>
+            <p>Use 'transition-duration: ;' para determinar a duração de um estilo para o outro</p>
+            <p>Use 'coluns' para determinar quantas colunas você quer em sua lista</p>
+            <p>Use 'list-style-position:' para determinar a posição da sua lista</p>
+            <p>Use 'position:' para determinar a posição de alguma caixa</p>
+        <h2>Links:</h2>
+            <p>Utuliza-se 'target="_blank"' no &lt;a&gt; para que o link abra em uma nova janela e 'target="_self' para abrir na mesma janela</p>
+            <p>O 'rel=""' serve para indicar como vai ser o estilo de navegação da suas paginas:
+                <ul>
+                    <li><p>external:Paginas extenas</p></li>
+                    <li><p>next:Proxima pagina está no link</p></li>
+                    <li><p>prev:Pagina anterior está no link</p></li>
+                    <li><p>nofollow:Diz para o mecanismo de busca para não relacionar a sua pagina(para propagandas)</p></li>
+                </ul>
+        <h3>Links dos sites:</h3>
+            <p><ul>
+                <li><p>Caracteres especias:<a href="https://www.homehost.com.br/blog/tutoriais/caracteres-especiais-acentos-html/" target="_blank">homehost</a> <br> <a href="https://www.invertexto.com/simbolos-para-copiar">invertexto</a></p></li>
+                <li><p>Emojis:'&#x'<a href="https://emojipedia.org/christmas-tree#technical"target="_blank">emojipedia</a></p></li>
+                <li><p>Sites com imagens/icones sem direitos autorais: <br><a href="https://unsplash.com/pt-br"target="_blank">unsplash</a><br><a href="https://www.pexels.com/pt-br/"target="_blank">pexels</a> <br> <a href="https://iconscout.com/icons/html"target="_blank">iconscout</a> <br><a href="https://www.iconarchive.com/"target="_blank">iconarchive</a></p></li>
+                <li><p>Site para criar icones: <a href="https://www.favicon.cc/"target="_blank">favicon.cc</a></p></li>
+                <li><p>Site para tranformar outros formatos em icones: <a href="https://favicon.io/"target="_blank">favicon.io</a></p></li>
+                <li><p>Tipos de arquivos:<a href="https://www.iana.org/assignments/media-types/media-types.xhtml"target="_blank">iana.org</a></p></li>
+                <li><p>Audios que podem ser usados:<a href="https://studio.youtube.com/channel/UCaNv7ak4-dS9M2SjmwuUX3Q/music" target="_blank">biblioteca de audio do youtube</a></p></li>
+                <li><p>Para Videos:  <br><a href="https://www.youtube.com/"  target="_blank">youtube</a> <br> <a href="https://vimeo.com/pt-br/" target="_blank">vimeo</a></p></li>
+                <li><p>Sites sobre cores:<br><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank">color.adobe.com</a><br><a href="https://paletton.com/#uid=33A0J0krmoMhPvFmBs3u1kgB9fc" target="_blank">paletton.com</a><br><a href="https://coolors.co/391463-f7dd72-499f68-016fb9-ff101f" target="_blank">coolors.co</a><br>
+                </p></li>
+                <li><p>Sites sobre fontes: <br><a href="https://www.w3schools.com/cssref/css_websafe_fonts.php" target="_blank">w3schools</a><br><a href="https://fonts.google.com/"target="_blank">fonts.google</a><br><a href="https://www.dafont.com/pt/"target="_blank">dafont</a><br><a href="https://www.whatfontis.com/"target="_blank">whatfontis</a><br><a href="https://www.fontsquirrel.com/"target="_blank">fontsquirrel</a><br><a href="https://www.myfonts.com/"target="_blank">myfonts</a></p></li>
+            </ul></p>
+    </main>
+</body>
+</html>
