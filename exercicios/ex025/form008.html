@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="num1">Numero:</label>
+            <input type="number" name="numm" id="num1" min="0" max="50" required oninput="so.innerHTML= Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="num2">Numero:</label>
+            <input type="number" name="numn" id="num2" min="0" max="50" required oninput="so.innerHTML= Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="so">Soma</label>
+            <output name="soma" id="so">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

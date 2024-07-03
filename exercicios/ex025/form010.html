@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="ano">Ano que nasceu</label>
+            <input type="number" name="nan" id="ano" min="1900" max="2024" oninput="cal()">
+        </p>
+        <p>
+            <label for="ida">Idade:</label>
+            <output id="ida">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function cal(){
+            let at = new Date().getFullYear()
+            ida.innerHTML = Number(at)- Number(ano.value)
+
+        }
+    </script>
+</body>
+</html>
