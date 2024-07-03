@@ -7,7 +7,22 @@
 </head>
 <body>
     <form action="cadastro.php" method="get" autocomplete="on">
-        
+        <fieldset >
+            <legend>Sexo</legend>
+            <input type="radio" id="m" name="sexo" value="m"><label for="m">Masculino</label>
+            <input type="radio" id="c" name="S2" value="c"><label for="c">Cis</label><br>
+            <input type="radio" id="f" name="sexo" value="f"><label for="f">Feminino</label>
+            <input type="radio" id="t" name="S2" value="t"><label for="t">Trans</label>
+            <!--Mesmo name pra type='radio'-->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="fut"checked ><label for="fut">Futebol</label> <br>
+            <input type="checkbox" name="bas" id="bas"checked><label for="bas">Basquete</label> <br>
+            <input type="checkbox" name="nat" id="nat"checked><label for="nat">Natação</label> <br>
+            <input type="checkbox" name="ten" id="ten" checked><label for="ten">Tenis</label> <br>
+            <input type="checkbox" name="vol" id="vol" checked><label for="vol">Volei</label>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
