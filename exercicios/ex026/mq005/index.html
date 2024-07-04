@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="bur" class="material-symbols-outlined" onclick="menu()">menu</i>
+        <menu id="it"> 
             <ul>
                 <li><a href="#">Opição 1</a></li>
                 <li><a href="#">Opição 2</a></li>
@@ -29,5 +31,15 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquam veritatis velit maxime? Autem dolore a error. Porro minima quae fugiat ipsam ut eaque accusantium, eius impedit error deserunt possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequuntur mollitia animi quae a. Eos voluptatem officia minus itaque dignissimos esse nihil, delectus ullam accusantium enim quibusdam, reiciendis illo quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quasi corrupti adipisci fugiat, sapiente nostrum? Quidem consectetur molestias aperiam quis facilis odit corrupti officiis laboriosam perferendis veniam! Magni, nulla nisi.</p>
         </article>
     </main>
+    <script>
+        function menu(){
+           if(it.style.display == 'block'){
+                it.style.display = 'none'
+           } else{
+                it.style.display = 'block'
+           }
+
+        }
+    </script>
 </body>
 </html>
