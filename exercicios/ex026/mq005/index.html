@@ -6,8 +6,9 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
-<body>
+<body onresize="tam()">
     <header>
         <h1>Meu site</h1>
         <i id="bur" class="material-symbols-outlined" onclick="menu()">menu</i>
@@ -39,6 +40,13 @@
                 it.style.display = 'block'
            }
 
+        }
+        function tam(){
+            if (window.innerWidth >= 768){
+                it.style.display = "block"
+            } else{
+                it.style.display = "none"
+            }
         }
     </script>
 </body>
