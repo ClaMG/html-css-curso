@@ -1,5 +1,70 @@
-
+/*
+pequenas telas: até 600px
+celula: 600px até 768px
+tablet: 768px até 992px
+pc: 992px até 1200px
+grandes telas: acima de 1200px
+*/
 /*imprimir*/
 @media print {
 
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../imagens/icon-print.png);
+        
+    }
+    h1{
+        text-shadow: none;
+        color: rgb(36, 36, 36);
+    }
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+    #tele{ display: none;}
+    #tablet{ display: none;}
+    #impri{ display: block;}
+    #pc{ display: none;}
+    #tv{ display: none;}
+
+    main::after{
+        content: "Essa impreção foi feita pelo site www.xxxxxxx.com";
+        text-decoration: overline;
+    }
+}
+
+@media screen and (min-width: 768px ) and (max-width: 992px){ /*tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #tele{ display: none;}
+    #tablet{ display: block;}
+    #impri{ display: none;}
+    #pc{ display: none;}
+    #tv{ display: none;}
+}
+@media screen and (min-width: 992px ) and (max-width: 1200px){ /*pc*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    #tele{ display: none;}
+    #tablet{ display: none;}
+    #impri{ display: none;}
+    #pc{ display: block;}
+    #tv{ display: none;}
+}
+@media screen and (min-width: 1200px ){ /*tv*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    
+    #tele{ display: none;}
+    #tablet{ display: none;}
+    #impri{ display: none;}
+    #pc{ display: none;}
+    #tv{ display: block;}
 }
