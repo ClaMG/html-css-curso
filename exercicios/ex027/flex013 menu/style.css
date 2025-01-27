@@ -40,6 +40,7 @@ header a{
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    display: inline-block;
 }
 
 header a:hover{
@@ -58,4 +59,12 @@ main{
 
 main h2, main p{
     margin: 2px;
+}
+
+#bur{
+    display: none;
+}
+
+#it{
+    display: block;
 }

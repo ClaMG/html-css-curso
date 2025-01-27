@@ -9,3 +9,20 @@ header h1{
 header a{
     width: 90vw;
 }
+
+#bur{
+    background-color:rgba(0, 0, 255, 0.356);
+    color: white;
+    display: block;
+    padding: 10px;
+    width: 100vw;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#bur:hover{
+    background-color: rgb(161, 236, 255);
+    color: black;
+    transition: 0.5s;
+}
